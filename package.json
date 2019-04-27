@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/neviim/robotube/issues"
   },
-  "homepage": "https://github.com/neviim/robotube#readme"
+  "homepage": "https://github.com/neviim/robotube#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
