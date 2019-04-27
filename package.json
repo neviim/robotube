@@ -1,0 +1,19 @@
+{
+  "name": "robotube",
+  "version": "1.0.0",
+  "description": "criacao de video automatico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neviim/robotube.git"
+  },
+  "author": "Neviim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neviim/robotube/issues"
+  },
+  "homepage": "https://github.com/neviim/robotube#readme"
+}
