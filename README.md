@@ -2,6 +2,7 @@
  
   Robo para criar e postar vídeo no Youtube
 
+
 # git comando
 
     # Switch para uma nova branch
@@ -12,12 +13,10 @@
     $ git add -A
     $ git commit -m "descrição para o commit"
 
-    # fazer o merge do user-input para original
-    $ git push origin user-input
+    # fazer o merge do google-search para original
+    $ git push origin google-seaarch
 
     $ git status
-
-
 
 
 # node
@@ -25,7 +24,6 @@
     $ node install googleapis
 
     $ node index.js
-
 
 
 # Customisa search API
