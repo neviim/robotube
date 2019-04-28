@@ -1,27 +1,21 @@
-const readline = require('readline-sync')
-
-function start() {
-    const content = {}
-
-    // Metodos
-    content.searchTerm = askAndReturnSearchTerm()
-    content.prefix = askAndReturnPrefix()
-
-    // Implementação dos metodos
-    function askAndReturnSearchTerm() {
-        return readline.question('Tecle um termo da Wikpedia: ')
-    }
-
-    function askAndReturnPrefix() {
-        const prefixes = ['Who is', 'What is', 'The history of']
-        const selectedPrefixIndex = readline.keyInSelect(prefixes, 'Escolha uma opcao: ' )
-        const selectedPrefixText  = prefixes[selectedPrefixIndex] 
-
-        // console.log(selectedPrefixText)
-        return selectedPrefixText
-    }
-
-    console.log(content)
+const robots = {
+  input: require('./robots/input.js'),
+  text: require('./robots/text.js'),
+  state: require('./robots/state.js'),
+  //image: require('./robots/image.js'),
+  //video: require('./robots/video.js'),
+  //youtube: require('./robots/youtube.js')
 }
 
-start() 
+async function start() {
+  robots.input()
+  await robots.text()
+  //await robots.image()
+  //await robots.video()
+  //await robots.youtube()
+
+  const content = robots.state.load()
+  console.dir(content, { depth: null})
+}
+
+start()
